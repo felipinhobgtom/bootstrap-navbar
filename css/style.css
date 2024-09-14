@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+
+}
+.navbar{
+    background-color: #1b4ead;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand.me-auto{
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    transition: 0.3s color;
+    cursor: default;
+}
+
+.navbar-brand.me-auto:hover{
+    color: #ffee52;
+}
+
+.login-button{
+    background-color: #fff;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover{
+    background-color: #fff;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link.mx-lg-2{
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+}
+
+.offcanvas.offcanvas-end{
+    background: #1b4ead;
+}
+
+.nav-link.mx-lg-2:hover, .nav-link.mx-lg-2.active{
+    color: #000;
+}
+@media(min-width: 991px){
+
+
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+
+}
+
+.hero-section{
+    background: url(../img/validation.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-section::before{
+    background-color: rgba(0,0,0,0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1{
+    font-size: 1.5em;
+    color: #ffee52;
+}
+
+.hero-section h2{
+    font-size: 1.2em;
+    color: #1b4ead;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #001a4b;
+}
